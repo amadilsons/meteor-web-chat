@@ -1,0 +1,58 @@
+<template name="chat">
+  {{> loginButtons}}
+  <h2>Hello {{ username }}</h2>
+  <p>You are now logged in</p>
+
+  <div class="chat-container">
+
+    <div class="message-board-div">
+      <ul>
+        {{> messageBoard}}
+      </ul>
+    </div>
+
+    <div class="text-container">
+      <form class="text-input-form">
+        <input type="text" class="text-input" name="text"/>
+      </form>
+      <button class="send-message-button">Send</button>
+    </div>
+
+    <div class="contacts-bar">
+      {{> contactsBar}}
+    </div>
+
+  </div>
+</template>
+
+
+<template name="messageBoard">
+  {{#each messages}}
+    <li>
+      <span display="inline-block"><span style="font-weight:bold">{{username}}</span>: {{text}}</span>
+    </li>
+  {{/each}}
+</template>
+
+
+<template name="contactsBar">
+  <div class="hide-offline"><button>Hide Offline</button></div>
+  <ul>
+    {{#each contacts}}
+        {{> contact }}
+    {{/each}}
+  </ul>
+</template>
+
+<template name="contact">
+  <li>
+    <span>
+      {{#if online }}
+        <img src="images/online.gif" alt="on" style="width=10px;height:10px">
+      {{else}}
+        <img src="images/offline.png" alt="on" style="width=10px;height:10px">
+      {{/if}}
+      <span class="contact-username">{{ username }}</span>
+  </span>
+  </li>
+</template>

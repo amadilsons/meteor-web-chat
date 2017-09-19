@@ -1,0 +1,188 @@
+/* CSS declarations go here */
+
+body {
+    background-color: #d6d6c2;
+    background-attachment: fixed;
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    padding: 0;
+
+    margin: 0;
+
+    font-size: 14px;
+    font-family: sans-serif;
+}
+
+.login-container {
+    position: relative;
+    max-width: 600px;
+    min-height: 20%;
+
+    margin: auto;
+    top: 20%;
+    background: white;
+}
+
+.chat-container {
+    position: relative;
+    max-width: 1000px;
+    min-height: 70%;
+    margin: auto;
+    top: 5%;
+    background: white;
+}
+
+.login-label {
+    position: absolute;
+    top: 15%;
+    left: 27%;
+    display: block;
+}
+
+.loggin-buttons-container {
+    position: absolute;
+    top: 50%;
+    right: 45%;
+}
+
+#login-buttons {
+    display: block;
+}
+
+.message-board-div {
+  position: absolute;
+  display: inline-block;
+  top: 0;
+
+  height: 85%;
+  width: 77%;
+
+  overflow: hidden;
+
+  background-color: white;
+}
+
+.contacts-bar {
+  position: absolute;
+  display: inline-block;
+  right: 0;
+
+  height: 100%;
+  width: 23%;
+
+  background-color: #adad85;
+}
+
+.hide-offline {
+  position: relative;
+  margin: 10% 0 5% 0;
+  padding: 0;
+
+  width: 50%;
+  left: 25%;
+
+  text-align: center;
+
+}
+
+.hide-offline button{
+  background-color: #4CAF50; /* Green */
+  border: none;
+  width: 100%;
+  color: white;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+
+
+}
+
+.send-message-button {
+  position: absolute;
+  background-color: #4CAF50;
+  border: none;
+  font-size: 20px;
+  color: white;
+  border-radius: 2px;
+  margin-top: 2%;
+}
+
+.hide-offline button:active {
+  background-color: #eee;
+  color: black;
+}
+
+.contact-username {
+  padding-left: 10px;
+}
+
+.text-container {
+  position: absolute;
+  display: inline-block;
+
+  bottom: 0;
+  height: 11%;
+  width: 65%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  padding-left: 4%;
+  padding-right: 8%;
+
+  border-style: solid none none none;
+  border-top-color: #adad85;
+  background-color: white;
+}
+
+.text-input-form {
+  display: inline-block;
+  position: relative;
+
+  margin: 0;
+  padding: 0;
+  width: 80%;
+
+}
+
+.text-input {
+  display: inline-block;
+  position: relative;
+
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.send-message-button {
+  display: inline-block;
+  position: relative;
+  left: 9%;
+  top: 3%;
+
+  width: 13%;
+  height: 50%;
+}
+
+ul {
+  position: relative;
+  margin-top: 5%;
+  padding-right: 5%;
+  padding-left: 5%;
+}
+
+li {
+  position: relative;
+  list-style: none;
+  padding: 15px;
+  border-bottom: #eee solid 1px;
+}
+
+li:active {
+  background-color: green;
+}
